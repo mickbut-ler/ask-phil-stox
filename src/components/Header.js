@@ -46,4 +46,4 @@ export default Header;
 //    1.1 Burger menu, STOX logo, shopping basket(FontAwesome)
 //  2. Organize div
 //  3. Burger menu when clicked show X menu
-//  4. When clicked is active show "Slider & NavigationMenu"
+//  4. When clicked is active show "Slider & NavigationMenu "
