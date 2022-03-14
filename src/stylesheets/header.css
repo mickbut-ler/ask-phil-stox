@@ -1,0 +1,18 @@
+.header__section {
+  height: 10vh;
+  width: 100%;
+  background-color: #fff;
+  padding: 5px;
+  /* border-bottom: 1px solid transparent; */
+  border-bottom: 1px solid black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.header__left {
+  display: flex;
+  align-items: center;
+}
+.stox__logo {
+  height: 80px;
+}

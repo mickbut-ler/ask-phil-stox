@@ -2,9 +2,37 @@ import React from "react";
 import Slider from "./Slider";
 import NavigationMenu from "./NavigationMenu";
 
+import "../stylesheets/header.css";
+
+import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
+import {
+  faBars,
+  faXmark,
+  faShoppingBag,
+} from "@fortawesome/free-solid-svg-icons";
+
 const Header = () => {
+  let clicked = false;
+  let burgerMenu = (clicked = true ? (
+    <FontAwesomeIcon icon={faBars} />
+  ) : (
+    <FontAwesomeIcon icon={faXmark} />
+  ));
+
+  // const logo
+
   return (
-    <div className="header__section">
+    <div className="">
+      <div className="header__section">
+        <div className="header__left">
+          {burgerMenu}
+          <img src="stox_logo.png" className="stox__logo" alt="" />
+        </div>
+        <div className="header__right">
+          <FontAwesomeIcon icon={faShoppingBag} />
+        </div>
+      </div>
+
       <Slider />
       <NavigationMenu />
     </div>
