@@ -1,14 +1,14 @@
 import React from "react";
 import Slider from "./Slider";
-import DropdownMenuNav from "./DropdownMenuNav";
+import NavigationMenu from "./NavigationMenu";
 
-const Nav = () => {
+const Header = () => {
   return (
     <div className="nav">
       <Slider />
-      <DropdownMenuNav />
+      <NavigationMenu />
     </div>
   );
 };
 
-export default Nav;
+export default Header;
