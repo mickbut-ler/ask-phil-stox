@@ -11,22 +11,23 @@ import {
   faShoppingBag,
 } from "@fortawesome/free-solid-svg-icons";
 
-// Workflow header section:
-//  1. Set height and with of the header and set all div elements:
-//    1.1 Burger menu, STOX logo, shopping basket(FontAwesome)
-//  2. Organize div
-//  3. Burger menu when clicked show X menu
-//  4. When clicked is active show "Slider & NavigationMenu "
-
 function Header() {
   const [isClicked, setIsClicked] = useState(false);
 
   function magnifyNavbar() {
     setIsClicked(!isClicked);
-    console.log(isClicked);
   }
 
-  let burgerMenu = isClicked == false ? faBars : faXmark;
+  const burgerMenu = isClicked == false ? faBars : faXmark;
+  // Check for inline statement
+  const dropDownMenu =
+    isClicked == false ? (
+      <div></div>
+    ) : (
+      <div>
+        <Slider /> <NavigationMenu />
+      </div>
+    );
 
   return (
     <div className="">
@@ -43,10 +44,16 @@ function Header() {
           <FontAwesomeIcon icon={faShoppingBag} />
         </div>
       </div>
-      <Slider />
-      <NavigationMenu />
+      {dropDownMenu}
     </div>
   );
 }
 
 export default Header;
+
+// Workflow header section:
+//  1. Set height and with of the header and set all div elements:
+//    1.1 Burger menu, STOX logo, shopping basket(FontAwesome)
+//  2. Organize div
+//  3. Burger menu when clicked show X menu
+//  4. When clicked is active show "Slider & NavigationMenu "
