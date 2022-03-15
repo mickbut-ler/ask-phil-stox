@@ -10,11 +10,19 @@
 .header__left {
   display: flex;
   align-items: center;
+  justify-content: center;
+  height: 100%;
+  padding: 10px;
 }
 .stox__logo {
-  height: 80px;
+  height: 60px;
+  margin-bottom: 5px;
 }
 
 .close__header {
   font-size: 22px;
+}
+
+.burger__menu {
+  width: 40px;
 }

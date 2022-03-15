@@ -33,12 +33,14 @@ function Header() {
     <div className="">
       <div className="header__section">
         <div className="header__left">
-          <FontAwesomeIcon
-            icon={burgerMenu}
-            onClick={magnifyNavbar}
-            className="close__header"
-          />
-          <img src="stox_logo.png" className="stox__logo" alt="" />
+          <div className="burger__menu">
+            <FontAwesomeIcon
+              icon={burgerMenu}
+              onClick={magnifyNavbar}
+              className="close__header"
+            />
+          </div>
+          <img src="stox_logo 1.svg" className="stox__logo" alt="" />
         </div>
         <div className="header__right">
           <FontAwesomeIcon icon={faShoppingBag} />
