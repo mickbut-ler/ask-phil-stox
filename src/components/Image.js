@@ -1,8 +1,6 @@
 import React from "react";
 
 const Image = ({ imageUrl, title }) => {
-  // let url =
-  //   "https://images.ctfassets.net/kpep6ikljkgq/4yWNuBLvluRUKgT3Yd0SAV/d4d5e5e28a3a7418d31e1a30ff9b7950/everyday-desktop.jpg?w=250&h=250&q=50&fm=webp";
   return (
     <div
       style={{

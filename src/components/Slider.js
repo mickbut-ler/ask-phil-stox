@@ -10,7 +10,7 @@ const Slider = () => {
     <div className="scrolling-wrapper">
       {imagesData.map((image, index) => (
         <div className="card">
-          <Image imageUrl={image.imageUrl} title={image.title} />
+          <Image key={index} imageUrl={image.imageUrl} title={image.title} />
         </div>
       ))}
     </div>
