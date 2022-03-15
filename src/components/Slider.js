@@ -1,35 +1,13 @@
 import React from "react";
+import { imagesData } from "../data/stoxImagesObject";
 
 import "../stylesheets/slider.css";
 
 const Slider = () => {
+  console.log(imagesData);
   return (
-    <div class="scrolling-wrapper">
-      <div class="card">
-        <h2>IMG</h2>
-      </div>
-      <div class="card">
-        <h2>IMG</h2>
-      </div>
-      <div class="card">
-        <h2>IMG</h2>
-      </div>
-      <div class="card">
-        <h2>IMG</h2>
-      </div>
-      <div class="card">
-        <h2>IMG</h2>
-      </div>
-      <div class="card">
-        <h2>IMG</h2>
-      </div>
-      <div class="card">
-        <h2>IMG</h2>
-      </div>
-      <div class="card">
-        <h2>IMG</h2>
-      </div>
-      <div class="card">
+    <div className="scrolling-wrapper">
+      <div className="card">
         <h2>IMG</h2>
       </div>
     </div>
