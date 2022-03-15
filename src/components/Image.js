@@ -6,9 +6,7 @@ const Image = ({ imageUrl, title }) => {
   return (
     <div
       style={{
-        background: `linear-gradient(to bottom, rgba(0,0,0,0) 20%, rgba(0,0,0,0.3)), url(${imageUrl})`,
-
-        // backgroundImage: `url(${imageUrl})`,
+        background: `linear-gradient(rgba(18, 18, 18, 0), rgba(18, 18, 18, 0), rgba(18, 18, 18, 0.4)), url(${imageUrl})`,
         height: `250px`,
         width: `200px`,
         objectFit: `scale-down`,
