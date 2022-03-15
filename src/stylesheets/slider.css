@@ -1,0 +1,11 @@
+.scrolling-wrapper {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.card {
+  display: inline-block;
+  flex: 0 0 auto;
+}

@@ -1,9 +1,37 @@
 import React from "react";
 
+import "../stylesheets/slider.css";
+
 const Slider = () => {
   return (
-    <div className="slider">
-      <h1>hello</h1>
+    <div class="scrolling-wrapper">
+      <div class="card">
+        <h2>IMG</h2>
+      </div>
+      <div class="card">
+        <h2>IMG</h2>
+      </div>
+      <div class="card">
+        <h2>IMG</h2>
+      </div>
+      <div class="card">
+        <h2>IMG</h2>
+      </div>
+      <div class="card">
+        <h2>IMG</h2>
+      </div>
+      <div class="card">
+        <h2>IMG</h2>
+      </div>
+      <div class="card">
+        <h2>IMG</h2>
+      </div>
+      <div class="card">
+        <h2>IMG</h2>
+      </div>
+      <div class="card">
+        <h2>IMG</h2>
+      </div>
     </div>
   );
 };
