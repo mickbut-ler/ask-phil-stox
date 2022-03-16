@@ -1,7 +1,7 @@
 .header__section {
   height: 10vh;
   background-color: #fff;
-  padding: 10px;
+  padding: 0 10px;
   border-bottom: 1px solid #d1d1d1;
   display: flex;
   justify-content: space-between;
@@ -12,7 +12,6 @@
   align-items: center;
   justify-content: center;
   height: 100%;
-  padding: 10px;
 }
 .stox__logo {
   height: 60px;
