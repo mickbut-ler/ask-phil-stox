@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Slider from "./Slider";
-import NavigationMenu from "./NavigationMenu";
+import DropDownMenu from "./DropDownMenu";
 
 import "../stylesheets/header.css";
 
@@ -25,7 +25,7 @@ function Header() {
       <div></div>
     ) : (
       <div>
-        <Slider /> <NavigationMenu />
+        <Slider /> <DropDownMenu />
       </div>
     );
 
