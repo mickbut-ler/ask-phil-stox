@@ -11,7 +11,7 @@ const DropdownMenu = () => {
   console.log(toggleDaily);
 
   const angleDaily = toggleDaily ? faAngleUp : faAngleDown;
-  const angleSport = toggleDaily ? faAngleUp : faAngleDown;
+  const angleSport = toggleSport ? faAngleUp : faAngleDown;
 
   // This should be one function
   function toggleDailyItems(e) {
