@@ -10,7 +10,8 @@ const DropdownMenu = () => {
   const [toggleSport, setToggleSport] = useState(false);
   console.log(toggleDaily);
 
-  const angleDaily = true ? faAngleUp : faAngleDown;
+  const angleDaily = toggleDaily ? faAngleUp : faAngleDown;
+  const angleSport = toggleDaily ? faAngleUp : faAngleDown;
 
   // This should be one function
   function toggleDailyItems(e) {
@@ -29,7 +30,19 @@ const DropdownMenu = () => {
           <FontAwesomeIcon icon={angleDaily} className="angle__icon" />
         </div>
         <ul className={toggleDaily ? null : "hide"}>
-          <li className="findElement">
+          <li>
+            <p className="product__li">SPORT</p>
+            <p className="quantity__li">25 products</p>
+          </li>
+          <li>
+            <p className="product__li">SPORT</p>
+            <p className="quantity__li">25 products</p>
+          </li>
+          <li>
+            <p className="product__li">SPORT</p>
+            <p className="quantity__li">25 products</p>
+          </li>
+          <li>
             <p className="product__li">SPORT</p>
             <p className="quantity__li">25 products</p>
           </li>
@@ -38,9 +51,21 @@ const DropdownMenu = () => {
       <section>
         <div onClick={toggleSportItems} className="dropdown__header">
           <h3>SPORT</h3>
-          <FontAwesomeIcon icon={angleDaily} className="angle__icon" />
+          <FontAwesomeIcon icon={angleSport} className="angle__icon" />
         </div>
         <ul className={toggleSport ? null : "hide"}>
+          <li>
+            <p className="product__li">SPORT</p>
+            <p className="quantity__li">25 products</p>
+          </li>
+          <li>
+            <p className="product__li">SPORT</p>
+            <p className="quantity__li">25 products</p>
+          </li>
+          <li>
+            <p className="product__li">SPORT</p>
+            <p className="quantity__li">25 products</p>
+          </li>
           <li>
             <p className="product__li">SPORT</p>
             <p className="quantity__li">25 products</p>
