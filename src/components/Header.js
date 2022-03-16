@@ -18,12 +18,10 @@ function Header() {
     setIsClicked(!isClicked);
   }
 
-  const burgerMenu = isClicked == false ? faBars : faXmark;
+  const burgerMenu = isClicked ? faXmark : faBars;
   // Check for inline statement
   const dropDownMenu =
-    isClicked == false ? (
-      <div></div>
-    ) : (
+    isClicked == false ? null : (
       <div>
         <Slider /> <DropdownMenu />
       </div>
