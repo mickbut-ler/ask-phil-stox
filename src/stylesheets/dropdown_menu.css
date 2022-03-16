@@ -39,3 +39,7 @@ li > p {
   font-size: 8px;
   color: #d1d1d1;
 }
+
+.hide {
+  display: none;
+}

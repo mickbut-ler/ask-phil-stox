@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 
 import "../stylesheets/dropdown_menu.css";
 
@@ -6,19 +6,41 @@ import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 
 const DropdownMenu = () => {
+  const [toggleDaily, setToggleDaily] = useState(false);
+  const [toggleSport, setToggleSport] = useState(false);
+  console.log(toggleDaily);
+
   const angleDaily = true ? faAngleUp : faAngleDown;
 
-  function toggleListItems() {
-    console.log("toggleListItems");
+  // This should be one function
+  function toggleDailyItems(e) {
+    setToggleDaily(!toggleDaily);
+    setToggleSport(false);
+  }
+  function toggleSportItems(e) {
+    setToggleSport(!toggleSport);
+    setToggleDaily(false);
   }
   return (
     <div>
       <section>
-        <div onClick={toggleListItems} className="dropdown__header">
+        <div onClick={toggleDailyItems} className="dropdown__header">
           <h3>DAILY</h3>
           <FontAwesomeIcon icon={angleDaily} className="angle__icon" />
         </div>
-        <ul>
+        <ul className={toggleDaily ? null : "hide"}>
+          <li className="findElement">
+            <p className="product__li">SPORT</p>
+            <p className="quantity__li">25 products</p>
+          </li>
+        </ul>
+      </section>
+      <section>
+        <div onClick={toggleSportItems} className="dropdown__header">
+          <h3>SPORT</h3>
+          <FontAwesomeIcon icon={angleDaily} className="angle__icon" />
+        </div>
+        <ul className={toggleSport ? null : "hide"}>
           <li>
             <p className="product__li">SPORT</p>
             <p className="quantity__li">25 products</p>
