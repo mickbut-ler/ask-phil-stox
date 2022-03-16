@@ -1,30 +1,31 @@
 import React from "react";
 
+import "../stylesheets/dropdown_menu.css";
+
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faAngleDown, faAngleUp } from "@fortawesome/free-solid-svg-icons";
 
-const DropDownMenu = () => {
+const DropdownMenu = () => {
   const angleDaily = true ? faAngleUp : faAngleDown;
   return (
     <div>
-      <div className="dropdown__header">
-        <h3>Daily</h3>
-        <FontAwesomeIcon icon={angleDaily} className="close__header" />
-      </div>
-      <ul>
-        <li>test</li>
-      </ul>
-      {/* <div className="dropdown__header">
-        <h3>Sports</h3>
-      </div>
-      <ul>
-        <li>test</li>
-      </ul> */}
+      <section>
+        <div className="dropdown__header">
+          <h3>DAILY</h3>
+          <FontAwesomeIcon icon={angleDaily} className="angle__icon" />
+        </div>
+        <ul>
+          <li>
+            <p className="product__li">SPORT</p>
+            <p className="quantity__li">25 products</p>
+          </li>
+        </ul>
+      </section>
     </div>
   );
 };
 
-export default DropDownMenu;
+export default DropdownMenu;
 
 // Workflow DropdownMenu section:
 //  1. Create two divs with header and li items
