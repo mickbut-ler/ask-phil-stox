@@ -3,8 +3,17 @@
   justify-content: space-between;
   align-items: center;
   padding: 0 10px;
+  border-bottom: 1px solid #d1d1d1;
+}
+section:first-of-type {
   border-top: 1px solid #d1d1d1;
 }
+/* section {
+  border-top: 1px solid #d1d1d1;
+}
+section:last-of-type {
+  border-bottom: 1px solid #d1d1d1;
+} */
 
 .dropdown__header > h3 {
   font-size: 12px;
@@ -26,7 +35,6 @@ li {
 ul {
   margin: 0;
   padding: 0;
-  border-bottom: 1px solid #d1d1d1;
 }
 li > p {
   padding: 0;
