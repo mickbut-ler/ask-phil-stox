@@ -13,7 +13,7 @@ Mick Butler STOX challenge - workflow:
 3. Create overview components
    - Header
    - Slider
-   - Navigation menu
+   - Dropdown menu
 4. Organize project (folders)
    - Component
    - Stylesheet
