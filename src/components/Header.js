@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import Slider from "./Slider";
-import DropdownMenu from "./Dropdownmenu";
+import DropdownMenu from "./DropdownMenu";
 
 import "../stylesheets/header.css";
 
